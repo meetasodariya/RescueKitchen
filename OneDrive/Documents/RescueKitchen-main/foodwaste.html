@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food waste - Reason, Impact, Facts and solution</title>
+    <!-- Swiper CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="foodwaste.css">
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- AOS(Animation On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- charts -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+
+<body>
+    <!-- Navbar start -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <a href="/">
+            <label class="logo"><span>R</span>escue<span>K</span>itchen</label>
+        </a>
+        <ul class="ul">
+            <li class="li"><a href="foodwaste.html" class="a">FoodWaste</a></li>
+            <li class="li"><a href="restro.html" class="a">Restaurants</a></li>
+            <li class="li"><a href="ngo.html" class="a">NGO's</a></li>
+            <li class="li"><a href="contactus.html" class="a">Contact-us</a></li>
+            <li class="li"><a href="aboutus.html" class="a">About-Us</a></li>
+            <li class="li"><a href="Donate.html" class="btnD"><button class="donate">Donate</button></a></li>
+        </ul>
+    </nav>
+    <!-- Navbar end -->
+    <!-- what is food waste starts -->
+    <div class="ourmotivation">
+        <div class="ourmotivationone">
+            <h1 data-aos="zoom-in">What is Food Waste?</h1>
+            <p>
+                In line with the United States <span class="yellowraleway">Environmental Protection Agency
+                    (EPA)</span> and the United Nations’
+                definition, <span class="curs"><span>R</span>escue<span>K</span>itchen</span> now defines <span
+                    class="yellowraleway">“food
+                    waste”</span> as uneaten food and inedible parts (e.g., peels, pits,
+                bones) going to the following eight destinations: <span class="greenraleway">composting</span>,
+                <span class="greenraleway">anaerobic digestion</span>, <span class="greenraleway">landfill</span>,
+                <span class="greenraleway">combustion</span>, <span class="greenraleway">sewer</span>, <span
+                    class="greenraleway">dumping</span>, <span class="greenraleway">spread onto land</span>, or
+                <span class="greenraleway">not harvested</span>.
+            </p>
+            <p>It’s a subset of <span class="yellowraleway">“surplus food”</span> –
+                which <span class="curs"><span>R</span>escue<span>K</span>itchen</span> defines as all food that
+                goes unsold or unused by a business or that goes uneaten at
+                home – including food and inedible parts that are donated, fed to animals, repurposed to produce
+                other products, and all of the destinations represented in food waste. Some surplus food is
+                inevitable, but the goal of food waste reduction efforts is not only to get food out of
+                landfills.
+                It’s also to make sure food is going to its <span class="yellowraleway">“highest and best
+                    use”</span> – that is, being eaten by
+                people.
+                This can be seen in guidance provided by the <span class="yellowraleway">EPA</span> in its
+                Wasted Food Scale.</p>
+            <p id="para2">Essentially, all of the
+                resources required to produce, transport, store, and sell a truckload of strawberries have been
+                better used when those strawberries are consumed by people rather than, for example, added to
+                soil
+                as compost – or worse, sent to landfill. The U.S. Government has set a <span class="greenraleway">50%
+                    food waste reduction goal</span>
+                that aims to cut the amount of food waste in the retail, food service, and residential sectors
+                in
+                half, in line with United Nations Sustainable Development Goal 12.3.
+            </p>
+            <div class="readbutton2">
+                <button class="readmore2" id="readmore2" onclick="readfunc2()">Read more</button>
+            </div>
+        </div>
+        <div class="ourmotivationtwo">
+            <div class="bgimg1"></div>
+        </div>
+    </div>
+    <!-- what is food waste ends -->
+
+
+
+
+    <!-- food waste reasons starts -->
+    <section style="margin-top:4vw;top: 5.3362vw;position: relative;">
+        <div class="donors">
+            <div class="donationinfo">
+                <h1 data-aos="zoom-in">Reasons of food waste</h1>
+                <p>
+                    Food waste occurs due to a variety of reasons throughout the entire spectrum of production, from the
+                    farm to the consumer. Here are some key reasons:</p>
+            </div>
+            <div class="donorsimages">
+                <div class="swiper mySwiper" style="padding: 20px 0;">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <h5 class="card-header" style="color: #e2b500;">Reason 1</h5>
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: rgb(1, 156, 1);" data-aos="zoom-in">Confusing
+                                        Labels</h5>
+                                    <p class="card-text">Sell-by, best-by, use-by, best-before
+                                        dates – these labels
+                                        often confuse customers and lead many to throw away food prematurely</p>
+                                    <a href="https://www.pbs.org/newshour/health/how-confusing-labels-contribute-to-our-food-waste-problem"
+                                        target='_blank' class="btn  btn-sm btn-outline-dark"
+                                        onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"
+                                        rel="noreferrer">Read more...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <h5 class="card-header" style="color: #e2b500;">Reason 2</h5>
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: rgb(1,156,1);" data-aos="zoom-in">
+                                        Overproduction and Unstable
+                                        Markets</h5>
+                                    <p class="card-text">Bad market conditions can lead
+                                        farmers to discard edible food.
+                                        When sold foods go uneaten...</p>
+                                    <a href="https://www.waste360.com/food-waste/how-overproduction-is-food-waste-s-biggest-culprit-and-opportunity"
+                                        target='_blank' class="btn  btn-sm btn-outline-dark"
+                                        onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"
+                                        rel="noreferrer">Read more...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <h5 class="card-header" style="color: #e2b500;">Reason 3</h5>
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: rgb(1,156,1);" data-aos="zoom-in">Inadequate
+                                        Storage and Climate
+                                        Control</h5>
+                                    <p class="card-text">Food can be lost due to mold, pests,
+                                        or inadequate climate...</p>
+                                    <a href="https://news.un.org/en/story/2021/03/1086402" target='_blank'
+                                        class="btn  btn-sm btn-outline-dark" onmouseover="hoverEffect(this)"
+                                        onmouseout="normalEffect(this)" rel="noreferrer">Read
+                                        more...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <h5 class="card-header" style="color: #e2b500;">Reason 4</h5>
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: rgb(1,156,1);" data-aos="zoom-in">Intentional
+                                        Food Waste</h5>
+                                    <p class="card-text">This refers to food that is fit for
+                                        consumption but consciously
+                                        discarded at the retail or consumption phases</p>
+                                    <a href="https://www.hsph.harvard.edu/nutritionsource/sustainability/food-waste/"
+                                        target='_blank' class="btn  btn-sm btn-outline-dark"
+                                        onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"
+                                        rel="noreferrer">Read more...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <h5 class="card-header" style="color: #e2b500;">Reason 5</h5>
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: rgb(1,156,1);" data-aos="zoom-in">Overbuying
+                                        and Poor Planning
+                                    </h5>
+                                    <p class="card-text">These contribute to food waste at
+                                        stores and in homes</p>
+                                    <a href="https://www.fao.org/flw-in-fish-value-chains/value-chain/consumption/consumer-food-waste/en/"
+                                        target='_blank' class="btn  btn-sm btn-outline-dark"
+                                        onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"
+                                        rel="noreferrer">Read more...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <h5 class="card-header" style="color: #e2b500;">Reason 6</h5>
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: rgb(1,156,1);" data-aos="zoom-in">Inadequate
+                                        Packaging</h5>
+                                    <p class="card-text"> Packaging that is not able to stop
+                                        food spoilage or
+                                        contamination can also lead to food waste</p>
+                                    <a href="https://www.mdpi.com/2071-1050/11/1/264" target='_blank'
+                                        class="btn  btn-sm btn-outline-dark" onmouseover="hoverEffect(this)"
+                                        onmouseout="normalEffect(this)" rel="noreferrer">Read
+                                        more...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next" style="color: #e2b500;"></div>
+                    <div class="swiper-button-prev" style="color: #e2b500;"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- food waste reasons ends -->
+
+
+
+    <!-- food waste impact starts -->
+    <section>
+        <div class="effect">
+            <div class="effectone">
+                <h1 data-aos="zoom-in">Effects of food waste</h1>
+                <ol>
+                    <li><span class="yellowraleway">Economic Loss</span>: When food is wasted, all the resources that
+                        were used to produce this food -
+                        including water, land, energy, labor, and capital - go to waste</li>
+                    <li><span class="yellowraleway">Environmental Impact</span>: The disposal of food loss and waste in
+                        landfills leads to greenhouse gas
+                        emissions, contributing to climate change. Decomposing food waste produces methane, a strong
+                        greenhouse gas that contributes to global warming</li>
+                    <li><span class="yellowraleway">Waste Management</span>: Food waste burdens waste management systems
+                    </li>
+                    <span id="para1">
+                        <li><span class="yellowraleway">Food Insecurity</span>: Food waste increases food
+                            insecurity. It
+                            is
+                            estimated that reducing food waste
+                            by 15% could feed more than 25 million Americans every year</li>
+                        <li><span class="yellowraleway">Biodiversity Loss and Pollution</span>: Food waste is a major
+                            contributor to the global problems of
+                            climate change, biodiversity loss, and pollution</li>
+                        <li><span class="yellowraleway">Waste of Water Resources</span>: It takes 65 billion liters of
+                            water
+                            to grow the potatoes we waste at
+                            home every year</li>
+                    </span>
+                </ol>
+                <div class="readbutton1">
+                    <button class="readmore1" id="readmore1" onclick="readfunc1()">Read more</button>
+                </div>
+            </div>
+            <div class="effecttwo">
+                <div class="effectimg"></div>
+            </div>
+        </div>
+        <!-- chart starts -->
+        <div id="unique-container"></div>
+        <!-- chart ends -->
+    </section>
+    <!-- food waste impact ends -->
+
+
+
+
+
+    <!-- food waste solution starts -->
+    <section>
+        <div class="donors">
+            <div class="donationinfo">
+                <h1 data-aos="zoom-in">Solutions of food waste</h1>
+                <p>
+                    Reducing food waste is a complex issue, but there are several strategies that can help:</p>
+            </div>
+            <div class="donorsimages">
+                <div class="swiper mySwiper" style="padding: 20px 0;">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <h5 class="card-header" style="color: #e2b500;">Solution 1</h5>
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: rgb(1, 156, 1);" data-aos="zoom-in">Shop Smart
+                                    </h5>
+                                    <p class="card-text">Buy only what you need. Make a list
+                                        and stick to it</p>
+                                    <a href="https://foodhero.com/blogs/reduce-waste-while-shopping" target='_blank'
+                                        class="btn  btn-sm btn-outline-dark" onmouseover="hoverEffect(this)"
+                                        onmouseout="normalEffect(this)" rel="noreferrer">Read more...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <h5 class="card-header" style="color: #e2b500;">Solution 2</h5>
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: rgb(1,156,1);" data-aos="zoom-in">Store Food
+                                        Correctly</h5>
+                                    <p class="card-text"> Proper storage can prevent food
+                                        spoilage</p>
+                                    <a href="https://www.consumeraffairs.com/news/storing-food-correctly-is-key-to-curbing-waste-nutrition-experts-say-012518.html"
+                                        target='_blank' class="btn  btn-sm btn-outline-dark"
+                                        onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"
+                                        rel="noreferrer">Read more...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <h5 class="card-header" style="color: #e2b500;">Solution 3</h5>
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: rgb(1,156,1);" data-aos="zoom-in">Understand
+                                        Dates</h5>
+                                    <p class="card-text">‘Use by’ indicates a date by which
+                                        the food is safe to be
+                                        eaten, while ‘best before’ means the food’s quality is...</p>
+                                    <a href="https://phys.org/news/2023-09-on-pack-expiration-dates-food-behaviors.html"
+                                        target='_blank' class="btn  btn-sm btn-outline-dark"
+                                        onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"
+                                        rel="noreferrer">Read
+                                        more...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <h5 class="card-header" style="color: #e2b500;">Solution 4</h5>
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: rgb(1,156,1);" data-aos="zoom-in">Donate
+                                        Surplus</h5>
+                                    <p class="card-text">If you have more food than you can
+                                        consume, consider donating
+                                        it</p>
+                                    <a href="https://foodtank.com/news/2020/12/organizations-diverting-food-waste-to-provide-meals-for-people-in-need/"
+                                        target='_blank' class="btn  btn-sm btn-outline-dark"
+                                        onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"
+                                        rel="noreferrer">Read more...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <h5 class="card-header" style="color: #e2b500;">Solution 5</h5>
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: rgb(1,156,1);" data-aos="zoom-in">Preserve Food
+                                    </h5>
+                                    <p class="card-text">Techniques like pickling and
+                                        fermenting can extend the life of
+                                        certain foods</p>
+                                    <a href="https://www.cambridge.org/core/journals/proceedings-of-the-nutrition-society/article/potential-of-food-preservation-to-reduce-food-waste/068BA186512F7A373F099C7C61CC3E90"
+                                        target='_blank' class="btn  btn-sm btn-outline-dark"
+                                        onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"
+                                        rel="noreferrer">Read more...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <h5 class="card-header" style="color: #e2b500;" data-aos="zoom-in">Solution 6</h5>
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: rgb(1,156,1);">Reduce and Recycle</h5>
+                                    <p class="card-text">Consider using garbage disposal
+                                        units, trash compactors, and
+                                        compost machines to manage food waste</p>
+                                    <a href="https://refed.org/" target='_blank' class="btn  btn-sm btn-outline-dark"
+                                        onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"
+                                        rel="noreferrer">Read
+                                        more...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <h5 class="card-header" style="color: #e2b500;">Solution 7</h5>
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: rgb(1,156,1);" data-aos="zoom-in">Innovative
+                                        Solutions</h5>
+                                    <p class="card-text">Community fridges, schemes to rescue
+                                        imperfect fruit, and other
+                                        innovations can help reduce the amount of food...</p>
+                                    <a href="https://www.weforum.org/agenda/2023/12/innovations-to-reduce-food-waste/"
+                                        target='_blank' class="btn  btn-sm btn-outline-dark"
+                                        onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"
+                                        rel="noreferrer">Read
+                                        more...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next" style="color: #e2b500;"></div>
+                    <div class="swiper-button-prev" style="color: #e2b500;"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- food waste solution ends -->
+
+
+    <!-- footer begins -->
+    <footer class="footer">
+        <div class="footercontainer">
+            <div class="footerrow">
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul style="padding-left: 0rem;">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Restaurants</a></li>
+                        <li><a href="#">NGOs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Food Waste</h4>
+                    <ul style="padding-left: 0rem;">
+                        <li><a href="#">What is food waste?</a></li>
+                        <li><a href="#">Food waste reasons</a></li>
+                        <li><a href="#">Food waste effects</a></li>
+                        <li><a href="#">food waste solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Donation</h4>
+                    <ul style="padding-left: 0rem;">
+                        <li><a href="#">Importance of donation</a></li>
+                        <li><a href="#">Donation form</a></li>
+                        <li><a href="#">All brand donors</a></li>
+                        <li><a href="#">Indivisual donors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <small>
+            <span><span class="curs high"><span>R</span>escue<span>K</span>itchen</span>, Inc. is a tax-exempt
+                organization
+                under section 501(c)(3) of the Internal Revenue Code. Tax ID: 83-1579781
+            </span>
+        </small>
+    </div>
+
+
+
+
+
+    <!-- Swiper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Below code is for automatic corousal
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            grabCursor: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        // Below code is for hover effect
+        function hoverEffect(element) {
+            element.style.color = "white";
+            element.style.backgroundColor = "rgb(1,156,1)";
+            element.style.border = "2px solid rgb(1,156,1)";
+        }
+
+
+        function normalEffect(element) {
+            element.style.color = "black";
+            element.style.backgroundColor = "transparent";
+            element.style.border = "1px solid black";
+        }
+
+
+        // for read more buttton
+        function readfunc2() {
+            let john2 = document.getElementById('para2');
+            if (john2.style.display == 'block') {
+                john2.style.display = 'none'
+            } else {
+                john2.style.display = 'block'
+            }
+            let text2 = document.getElementById('readmore2');
+            console.log(text2.innerText)
+            if (text2.innerText == 'Read more') {
+                text2.innerText = 'Read less';
+            } else {
+                text2.innerText = 'Read more';
+            }
+        }
+        function readfunc1() {
+            let john2 = document.getElementById('para1');
+            if (john2.style.display == 'block') {
+                john2.style.display = 'none'
+            } else {
+                john2.style.display = 'block'
+            }
+            let text2 = document.getElementById('readmore1');
+            console.log(text2.innerText)
+            if (text2.innerText == 'Read more') {
+                text2.innerText = 'Read less';
+            } else {
+                text2.innerText = 'Read more';
+            }
+        }
+
+        // for chart
+        Highcharts.chart('unique-container', {
+            chart: {
+                type: 'column',
+                backgroundColor: '#f9f9f9', // Set background color
+                borderRadius: 5, // Set border radius
+                spacing: [20, 20, 40, 20], // Add spacing [top, right, bottom, left]
+            },
+            title: {
+                text: 'Food waste per capita, 2023 (kg)',
+                style: {
+                    color: '#333', // Set title color
+                    fontSize: '20px', // Set title font size
+                    fontWeight: 'bold' // Set title font weight
+                }
+            },
+            subtitle: {
+                text: 'Source: Our World in Data',
+                style: {
+                    color: '#666' // Set subtitle color
+                }
+            },
+            xAxis: {
+                categories: ['United States', 'China', 'India', 'World', 'Brazil', 'South Africa', 'Russia'],
+                labels: {
+                    style: {
+                        color: '#333' // Set x-axis label color
+                    }
+                }
+            },
+            yAxis: {
+                title: {
+                    text: 'Amount of food wasted',
+                    style: {
+                        color: '#333' // Set y-axis title color
+                    }
+                },
+                labels: {
+                    style: {
+                        color: '#333' // Set y-axis label color
+                    }
+                }
+            },
+            legend: {
+                align: 'right',
+                x: -30,
+                verticalAlign: 'top',
+                y: 25,
+                itemStyle: {
+                    color: '#333' // Set legend item color
+                },
+                itemHoverStyle: {
+                    color: '#000' // Set legend item hover color
+                }
+            },
+            plotOptions: {
+                column: {
+                    stacking: 'normal',
+                    dataLabels: {
+                        enabled: true,
+                        color: '#333', // Set data label color
+                        style: {
+                            textOutline: 'none' // Disable text outline
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: 'Retail',
+                data: [16, 16, 16, 15, 16, 16, 14],
+                color: 'rgb(1,156,1)' // green
+            }, {
+                name: 'Out-of-home consumption',
+                data: [64, 46, 28, 31, 28, 28, 28],
+                color: 'red' // Red
+            }, {
+                name: 'Household',
+                data: [59, 64, 77, 74, 60, 40, 33],
+                color: '#91e8e1' // Light blue
+            }],
+            responsive: {
+                rules: [{
+                    condition: {
+                        maxWidth: 350 // Adjust the maximum width as needed
+                    },
+                    chartOptions: {
+                        legend: {
+                            layout: 'horizontal',
+                            align: 'center',
+                            verticalAlign: 'bottom'
+                        }
+                    }
+                }]
+            }
+        });
+        //  FOR AOS
+        AOS.init();
+    </script>
+    <!-- Bootstarp link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+    <!-- 1> FOR AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Chatbot code -->
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/1fbb9cd4-fe16-4e09-88b8-836fd7e63b34/webchat/config.js" defer></script>
+    <!--End of Chatbot code -->
+</body>
+
+</html>

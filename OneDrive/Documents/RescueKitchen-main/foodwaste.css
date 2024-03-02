@@ -1,0 +1,759 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Raleway:wght@600;800&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+nav {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+.logo {
+  color: transparent;
+  font-family: cursive;
+  font-size: 30px;
+  -webkit-text-stroke: 1.2px black;
+  margin: auto;
+  line-height: 80px;
+  padding: 0 50px;
+  font-weight: bold;
+}
+
+#check:checked ~ ul {
+  top: 80px;
+}
+
+nav .ul {
+  float: right;
+  margin: 19px 0;
+}
+
+nav .ul .li {
+  display: inline-block;
+  line-height: 40px;
+  margin: 0 20px;
+}
+
+.checkbtn {
+  float: right;
+  color: rgb(1, 156, 1);
+  line-height: 80px;
+  font-size: 30px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.a {
+  position: relative;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(1, 156, 1);
+  font-size: 1.4vw;
+  letter-spacing: 0.5px;
+}
+
+.a::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  transition: 0.4s ease-in-out;
+}
+
+.a:hover {
+  color: black;
+}
+
+.a:hover::after {
+  width: 100%;
+}
+
+nav img {
+  height: 4vw;
+  border-radius: 50%;
+}
+
+.donate {
+  border-radius: 7px;
+  padding: 0px 10px;
+  font-size: 1.4vw;
+  cursor: pointer;
+  border: 2px solid black;
+  background-color: transparent;
+  color: black;
+}
+
+.btnD {
+  color: black;
+  text-decoration: none;
+}
+
+.btnD:hover {
+  color: white;
+}
+
+.donate:hover {
+  border: 2px solid rgb(1, 156, 1);
+  outline: none;
+  color: white;
+  background-color: rgb(1, 156, 1);
+}
+
+.logo span {
+  color: rgb(1, 156, 1);
+  font-size: larger;
+  font-weight: 900;
+}
+
+.wholelogo {
+  display: flex;
+  gap: 2px;
+}
+
+.card-text {
+  font-size: 1.4vw;
+}
+
+.card {
+  width: 40%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  font-family: "Raleway";
+  border: none;
+}
+
+/* readmore button */
+.readbutton1 {
+  justify-content: center;
+  display: none;
+}
+.readmore1 {
+  border-radius: 7px;
+  padding: 5px 12px;
+  font-size: 1vw;
+  display: flex;
+  right: 5px;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid black;
+  background-color: transparent;
+  color: black;
+}
+
+.readbutton2 {
+  justify-content: center;
+  display: none;
+}
+.readmore2 {
+  border-radius: 7px;
+  padding: 5px 12px;
+  font-size: 1vw;
+  display: flex;
+  right: 5px;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid black;
+  background-color: transparent;
+  color: black;
+}
+
+#para2 {
+  display: none;
+}
+
+.readbutton2 {
+  display: flex;
+}
+
+.greenraleway {
+  color: rgb(1, 156, 1);
+  font-family: "Raleway", sans-serif;
+}
+.yellowraleway {
+  color: #e2b500;
+  font-family: "Raleway", sans-serif;
+}
+
+section {
+  margin-top: 4vw;
+  position: relative;
+  top: 5.3362vw;
+}
+
+/* what is food waste starts */
+.ourmotivation {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  position: relative;
+  top: 80px;
+  width: 100%;
+}
+
+.ourmotivation h1 {
+  color: rgb(1, 156, 1);
+  font-family: "Raleway", sans-serif;
+  font-size: 2.7vw;
+}
+
+.ourworkcontentone h3 {
+  font-family: "Raleway", sans-serif;
+  color: rgb(1, 156, 1);
+}
+
+.bgimg1 {
+  background-image: url(paul-schellekens-c-R885Oc7k0-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.ourmotivationone {
+  font-size: 1.4vw;
+  width: 64%;
+  font-family: "Raleway";
+  text-align: justify;
+}
+.ourmotivationtwo {
+  width: 30%;
+}
+
+.curs {
+  font-family: cursive;
+  color: black;
+}
+
+.curs span {
+  color: rgb(1, 156, 1);
+}
+/* what is food waste ends */
+
+/* Food waste reasons starts */
+.donors {
+  padding: 25px;
+}
+
+.donorsimages {
+  margin: 3vw auto;
+  margin-bottom: 0;
+}
+
+.donationinfo {
+  width: 55vw;
+  font-size: 1.4vw;
+  font-family: "Raleway", sans-serif;
+}
+
+.donationinfo h1 {
+  color: rgb(1, 156, 1);
+  font-size: 2.7vw;
+}
+
+.donationbutton button {
+  color: black;
+  background-color: transparent;
+  border: 2px solid black;
+  font-weight: 600;
+  font-size: 25px;
+  cursor: pointer;
+  padding: 15px 35px;
+}
+
+.donationbutton button:hover {
+  color: white;
+  background-color: rgb(1, 156, 1);
+  border: 2px solid rgb(1, 156, 1);
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Food waste reasons ends */
+
+/* food waste effects starts */
+.effect {
+  display: flex;
+  padding: 25px;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.effect h1 {
+  color: rgb(1, 156, 1);
+  font-size: 2.7vw;
+  font-family: "Raleway", sans-serif;
+}
+
+.effectimg {
+  background-image: url(Designer2.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.effectone {
+  font-size: 1.4vw;
+  width: 64%;
+  font-family: "Raleway";
+}
+.effecttwo {
+  width: 30%;
+}
+/* food waste effects ends */
+/* footer section ends */
+.footercontainer {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.footerrow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(1, 156, 1);
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: rgb(1, 156, 1);
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: rgb(1, 156, 1);
+  font-weight: 400;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: black;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 10px;
+  margin: 0 10px 20px 0;
+  text-align: center;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  border: 1px solid black;
+  color: black;
+  line-height: 40px;
+}
+
+.footer-col .social-links a:hover {
+  color: white;
+  border: 1px solid rgb(1, 156, 1);
+  background-color: rgb(1, 156, 1);
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  line-height: 1.5;
+  background-color: #f0f0f0;
+  padding: 70px 0;
+  margin-top: 4vw;
+  position: relative;
+  top: 5.3362vw;
+  font-family: "Raleway";
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+/* footer section ends */
+/* copyright starts */
+.high {
+  font-size: larger;
+  color: black;
+}
+
+.high span {
+  color: rgb(1, 156, 1);
+}
+
+.copyright {
+  text-align: center;
+  background-color: white;
+  color: black;
+  position: relative;
+  top: 5.3362vw;
+  padding: 10px 20px;
+  font-family: "Raleway";
+}
+/* copyright ends */
+.swiper-pagination {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 25px;
+    padding-left: 35px;
+  }
+
+  nav .ul .li a {
+    font-size: 16px;
+  }
+
+  nav .ul .li {
+    margin: 0 8px;
+  }
+
+  .donate {
+    font-size: 1.7vw;
+  }
+
+  .a {
+    font-size: 1.9vw;
+  }
+
+  .ourmotivation {
+    flex-direction: column-reverse;
+    gap: 25px;
+  }
+
+  .readmore2 {
+    font-size: 1.5vw;
+  }
+
+  .ourmotivationone {
+    width: 100%;
+    font-size: 1.8vw;
+  }
+
+  .ourmotivationtwo {
+    width: 38vw;
+    height: 38vw;
+    margin: auto;
+  }
+
+  .card {
+    width: 65%;
+  }
+
+  .card-text {
+    font-size: 1.8vw;
+  }
+  .donationinfo {
+    width: 58vw;
+    font-size: 1.8vw;
+  }
+
+  .effect {
+    flex-direction: column-reverse;
+    gap: 25px;
+  }
+  .effecttwo {
+    width: 38vw;
+    height: 38vw;
+    margin: auto;
+  }
+
+  .effectone {
+    width: 100%;
+    font-size: 1.8vw;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 953px) {
+  .swiper-pagination {
+    display: none;
+  }
+  nav .ul .li {
+    margin: 0 15px;
+  }
+  label.logo {
+    font-size: 25px;
+    padding-left: 50px;
+  }
+
+  .a {
+    font-size: 1.6vw;
+  }
+
+  .donate {
+    font-size: 1.6vw;
+  }
+
+  .card {
+    width: 51%;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  .swiper-pagination {
+    display: block;
+  }
+
+  .a {
+    font-size: 17px;
+    color: white;
+  }
+
+  .donate {
+    font-size: 17px;
+    border: 2px solid white;
+    color: white;
+    padding: 3px 14px;
+  }
+
+  .donate:hover {
+    color: rgb(1, 156, 1);
+    background-color: white;
+  }
+
+  .ul {
+    position: fixed;
+    width: 100%;
+    height: 340px;
+    background: rgb(1, 156, 1);
+    top: -100%;
+    transition: all 0.5s;
+    text-align: center;
+  }
+
+  nav .ul {
+    margin: 0px;
+  }
+
+  nav .ul .li {
+    margin: 20px 0;
+    line-height: 30px;
+    display: block;
+  }
+
+  nav .ul .li a {
+    font-size: 20px;
+    color: white;
+  }
+
+  .card {
+    width: 98%;
+    margin-bottom: 15px;
+  }
+  .swiper-button-next {
+    display: none;
+  }
+  .swiper-button-prev {
+    display: none;
+  }
+  .card p {
+    font-size: 2.8vw;
+  }
+
+  #para1 {
+    display: none;
+  }
+
+  .readbutton1 {
+    display: flex;
+  }
+
+  .effectone {
+    font-size: 2.6vw;
+  }
+
+  .effect h1 {
+    font-size: 3.3vw;
+  }
+  .readmore1 {
+    font-size: 2vw;
+  }
+  .donationinfo {
+    font-size: 2.6vw;
+    width: 83vw;
+  }
+
+  .donationinfo h1 {
+    font-size: 3.3vw;
+  }
+
+  .readmore2 {
+    font-size: 2vw;
+  }
+
+  .ourmotivationone {
+    font-size: 2.6vw;
+  }
+
+  .ourmotivationone h1 {
+    font-size: 3.3vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .card h5 {
+    font-size: 4vw;
+  }
+  .card p {
+    font-size: 3.5vw;
+  }
+  .card .btn {
+    font-size: 3vw;
+  }
+  .donationinfo {
+    width: 78vw;
+    font-size: 3.2vw;
+  }
+
+  .donationinfo h1 {
+    font-size: 4.7vw;
+  }
+
+  .effecttwo {
+    width: 60vw;
+    height: 60vw;
+  }
+
+  .ourmotivationtwo {
+    width: 60vw;
+    height: 60vw;
+  }
+
+  .effectone {
+    font-size: 3.8vw;
+  }
+
+  .effect h1 {
+    font-size: 4.7vw;
+  }
+
+  .readmore1 {
+    font-size: 3vw;
+  }
+
+  .readmore2 {
+    font-size: 2.5vw;
+  }
+
+  .ourmotivationone {
+    font-size: 3.4vw;
+  }
+
+  .ourmotivationone h1 {
+    font-size: 4.2vw;
+  }
+
+  .ourmotivation {
+    margin-bottom: 17vw;
+  }
+}
+
+/* chart */
+/* Apply some basic styling to the chart container */
+#unique-container {
+  width: 100%; /* Set width to 100% for responsiveness */
+  max-width: 800px; /* Set max-width for the container */
+  height: 500px;
+  margin: 0px auto; /* Add margin */
+  padding: 20px; /* Add padding */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Adjust text size for better visibility on smaller screens */
+@media only screen and (max-width: 350px) {
+  .highcharts-title,
+  .highcharts-subtitle,
+  .highcharts-axis-labels,
+  .highcharts-legend-item text,
+  .highcharts-data-labels text {
+    font-size: 10px !important; /* Adjust font size */
+  }
+  /* .highcharts-title {
+    font-size: 14px !important; 
+} */
+}
+
+@media only screen and (min-width: 1300px) {
+  .card-text {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,995 @@
+/* Google fonts link */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Raleway:wght@600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* .arapey-regular {
+  font-family: "Arapey", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  .arapey-regular {
+  font-family: "Arapey", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.arapey-regular-italic {
+  font-family: "Arapey", serif;
+  font-family: "Arapey", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+// <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 200 to 700
+
+.oswald-<uniquifier> {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+} */
+/* font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif; */
+
+/* General CSS */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.readbutton2 {
+  justify-content: center;
+  display: none;
+}
+.readmore2 {
+  border-radius: 7px;
+  padding: 5px 12px;
+  font-size: 15px;
+  display: flex;
+  right: 5px;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid black;
+  background-color: transparent;
+  color: black;
+}
+
+nav {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+.logo {
+  color: transparent;
+  font-family: cursive;
+  font-size: 30px;
+  -webkit-text-stroke: 1.2px black;
+  margin: auto;
+  line-height: 80px;
+  padding: 0 50px;
+  font-weight: bold;
+}
+
+#check:checked ~ ul {
+  top: 80px;
+}
+
+nav .ul {
+  float: right;
+  margin: 19px 0;
+}
+
+nav .ul .li {
+  display: inline-block;
+  line-height: 40px;
+  margin: 0 20px;
+}
+
+.checkbtn {
+  float: right;
+  color: rgb(1, 156, 1);
+  line-height: 80px;
+  font-size: 30px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.a {
+  position: relative;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(1, 156, 1);
+  font-size: 1.4vw;
+  letter-spacing: 0.5px;
+}
+
+.a::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  transition: 0.4s ease-in-out;
+}
+
+.a:hover {
+  color: black;
+}
+
+.a:hover::after {
+  width: 100%;
+}
+
+nav img {
+  height: 4vw;
+  border-radius: 50%;
+}
+
+.donate {
+  border-radius: 7px;
+  padding: 0px 10px;
+  font-size: 1.4vw;
+  cursor: pointer;
+  border: 2px solid black;
+  background-color: transparent;
+  color: black;
+}
+
+.btnD {
+  color: black;
+  text-decoration: none;
+}
+
+.btnD:hover {
+  color: white;
+}
+
+.donate:hover {
+  border: 2px solid rgb(1, 156, 1);
+  outline: none;
+  color: white;
+  background-color: rgb(1, 156, 1);
+}
+
+.logo span {
+  color: rgb(1, 156, 1);
+  font-size: larger;
+  font-weight: 900;
+}
+
+.wholelogo {
+  display: flex;
+  gap: 2px;
+}
+
+.greenraleway {
+  color: rgb(1, 156, 1);
+  font-family: "Raleway", sans-serif;
+}
+.yellowraleway {
+  color: #e2b500;
+  font-family: "Raleway", sans-serif;
+}
+
+section {
+  margin-top: 4vw;
+}
+
+/* Hero section starts */
+
+.hero {
+  height: 38vw;
+  position: relative;
+  top: 80px;
+}
+
+video {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.engage {
+  width: 40%;
+  top: 26%;
+  position: absolute;
+  left: 7%;
+  text-align: center;
+  z-index: 99;
+}
+
+.engage h2 {
+  -webkit-text-stroke: 1.25px green;
+  color: white;
+  font-size: 2.8vw;
+  font-weight: 900;
+  font-family: "Raleway", sans-serif;
+}
+
+.engage h3 {
+  color: white;
+  margin: 20px 0px;
+  font-size: 1.9vw;
+  font-family: "Raleway", sans-serif;
+}
+
+.engage button {
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  font-weight: 600;
+  font-size: 1.5vw;
+  cursor: pointer;
+  padding: 15px 35px;
+}
+
+.curs {
+  font-family: cursive;
+}
+
+.curs span {
+  color: rgb(1, 156, 1);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  gap: 40px;
+}
+
+.buttons button:hover {
+  background-color: #fff;
+  color: rgb(1, 156, 1);
+}
+
+/* Hero section ends */
+
+/* our motivation section starts */
+
+/* Header section starts */
+.sec_header::after {
+  content: "";
+  width: 100%;
+  height: 30px;
+  background-image: url(decoration.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 0;
+}
+
+.sec {
+  margin-top: 20px;
+  margin-bottom: 4rem;
+}
+.sec_header h1 {
+  color: rgb(1, 156, 1);
+  text-align: center;
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+}
+/* Header section ends */
+
+/* ourmotivation starts */
+.ourmotivation {
+  display: flex;
+  padding: 25px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.ourworkcontentone h3 {
+  font-family: "Raleway", sans-serif;
+  color: rgb(1, 156, 1);
+}
+
+.bgimg1 {
+  background-image: url(20240208_132452.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.ourmotivationone {
+  font-size: 1.5vw;
+  width: 64%;
+  text-align: justify;
+}
+.ourmotivationtwo {
+  width: 30%;
+}
+/* our motivation section ends */
+
+/* donors section starts */
+.donors {
+  padding: 25px;
+}
+
+.donorsimages {
+  margin: 50px auto;
+}
+
+.donationinfo {
+  width: 61vw;
+  font-family: "Raleway", sans-serif;
+}
+.donationinfo h1 {
+  font-size: 2.6vw;
+}
+
+.donationinfo h2 {
+  color: #e2b500;
+  font-size: 2.4vw;
+}
+.donationinfo h3 {
+  color: rgb(1, 156, 1);
+  font-size: 2.3vw;
+}
+
+.donationbutton button {
+  color: black;
+  background-color: transparent;
+  border: 2px solid black;
+  font-weight: 600;
+  font-size: 25px;
+  cursor: pointer;
+  padding: 15px 35px;
+}
+
+.donationbutton button:hover {
+  color: white;
+  background-color: rgb(1, 156, 1);
+  border: 2px solid rgb(1, 156, 1);
+}
+
+.card1 {
+  width: 15vw;
+  background-image: url("https://refed.org/img/home/general_mills_logo.png?_cchid=1b8a05dc474acaced150a69a26d41629");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 9rem;
+}
+.card2 {
+  width: 15vw;
+  background-image: url("https://refed.org/uploads/posner-horizontal-teal.png?_cchid=7314112977f26a1f3adf556f28cdc098");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 9rem;
+}
+.card3 {
+  width: 15vw;
+  background-image: url("https://refed.org/uploads/bjfff.png?_cchid=98c29afe2e4aae8b2b9c3a14ccb4ff79");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 9rem;
+}
+.card4 {
+  width: 15vw;
+  background-image: url("https://refed.org/img/home/crown-logo.png?_cchid=2cf64047a3206ca08d832c643901b894");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 9rem;
+}
+.card5 {
+  width: 15vw;
+  background-image: url("https://refed.org/uploads/ballmer-logo.png?_cchid=618b0b9442845c262d0d7cb5ac625197");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 9rem;
+}
+.card6 {
+  width: 15vw;
+  background-image: url("https://refed.org/uploads/logos/financial-funders/…_logo.png?_cchid=f50c3e824fceff484cc49b70f7158c0a");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 9rem;
+}
+.card7 {
+  width: 15vw;
+  background-image: url("https://refed.org/img/home/Kroger_ZHZW_Foundation_onWhite.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 9rem;
+}
+.card8 {
+  width: 15vw;
+  background-image: url("https://refed.org/uploads/the-tepper-foundation.png?_cchid=47891c05f9ac04820811284b7a9ac95e");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 9rem;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* donors section ends */
+
+/* footer section ends */
+.footercontainer {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.footerrow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(1, 156, 1);
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: rgb(1, 156, 1);
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: rgb(1, 156, 1);
+  font-weight: 400;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: black;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  margin-right: 10px;
+  margin: 0 10px 20px 0;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  color: black;
+  line-height: 40px;
+}
+
+.footer-col .social-links a:hover {
+  border: 1px solid rgb(1, 156, 1);
+  color: white;
+  background-color: rgb(1, 156, 1);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0rem;
+}
+
+.footer {
+  line-height: 1.5;
+  background-color: #f0f0f0;
+  padding: 70px 0;
+  margin-top: 4vw;
+  font-family: "Raleway";
+}
+
+
+/* Responsive */
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+/* footer section ends */
+/* copyright starts */
+.high {
+  font-size: larger;
+  color: black;
+}
+.copyright {
+  text-align: center;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  font-family: "Raleway";
+}
+/* copyright ends */
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 25px;
+    padding-left: 35px;
+  }
+
+  nav .ul .li a {
+    font-size: 16px;
+  }
+
+  nav .ul .li {
+    margin: 0 8px;
+  }
+
+  .donate {
+    font-size: 1.7vw;
+  }
+
+  .a {
+    font-size: 1.9vw;
+  }
+
+  .ourmotivation {
+    flex-direction: column-reverse;
+    gap: 25px;
+  }
+
+  .ourmotivationtwo {
+    width: 38vw;
+    margin: auto;
+    height: 38vw;
+  }
+
+  .ourmotivationone {
+    font-size: 1.9vw;
+    width: 100%;
+    text-align: justify;
+  }
+
+  .donationinfo {
+    width: 76vw;
+  }
+  .card1 {
+    width: 20vw;
+  }
+  .card2 {
+    width: 20vw;
+  }
+  .card3 {
+    width: 20vw;
+  }
+  .card4 {
+    width: 20vw;
+  }
+  .card5 {
+    width: 20vw;
+  }
+  .card6 {
+    width: 20vw;
+  }
+  .card7 {
+    width: 20vw;
+  }
+  .card8 {
+    width: 20vw;
+  }
+
+  .hero {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+  }
+
+  video {
+    width: 53%;
+    max-width: 53%;
+  }
+
+  .engage {
+    width: 45%;
+    top: 0%;
+    position: static;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .engage h2 {
+    -webkit-text-stroke: black;
+    color: black;
+  }
+
+  .engage h3 {
+    color: black;
+  }
+
+  .engage button {
+    color: white;
+    background-color: rgb(1, 156, 1);
+    border: 2px solid rgb(1, 156, 1);
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 953px) {
+  nav .ul .li {
+    margin: 0 15px;
+  }
+  label.logo {
+    font-size: 25px;
+    padding-left: 50px;
+  }
+
+  .a {
+    font-size: 1.6vw;
+  }
+
+  .donate {
+    font-size: 1.6vw;
+  }
+
+  .ourmotivationone {
+    font-size: 1.7vw;
+  }
+
+  .card1 {
+    width: 18vw;
+  }
+  .card2 {
+    width: 18vw;
+  }
+  .card3 {
+    width: 18vw;
+  }
+  .card4 {
+    width: 18vw;
+  }
+  .card5 {
+    width: 18vw;
+  }
+  .card6 {
+    width: 18vw;
+  }
+  .card7 {
+    width: 18vw;
+  }
+  .card8 {
+    width: 18vw;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  #para2 {
+    display: none;
+  }
+
+  .readbutton2 {
+    display: flex;
+  }
+
+  .a {
+    font-size: 17px;
+    color: white;
+  }
+
+  .donate {
+    font-size: 17px;
+    border: 2px solid white;
+    color: white;
+    padding: 3px 14px;
+  }
+
+  .donate:hover {
+    color: rgb(1, 156, 1);
+    background-color: white;
+  }
+
+  .ul {
+    position: fixed;
+    width: 100%;
+    height: 340px;
+    background: rgb(1, 156, 1);
+    top: -100%;
+    transition: all 0.5s;
+    text-align: center;
+  }
+
+  nav .ul {
+    margin: 0px;
+  }
+
+  nav .ul .li {
+    margin: 20px 0;
+    line-height: 30px;
+    display: block;
+  }
+
+  nav .ul .li a {
+    font-size: 20px;
+    color: white;
+  }
+
+  .hero {
+    flex-direction: column;
+    height: 100vw;
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  video {
+    width: 100%;
+    max-width: 100%;
+    height: 57vw;
+  }
+
+  .engage h2 {
+    font-size: 5vw;
+  }
+
+  .engage h3 {
+    font-size: 3.4vw;
+    margin: 10px 0;
+  }
+
+  .engage button {
+    padding: 7px 15px;
+    font-size: 3vw;
+    margin-top: 0.5rem;
+  }
+
+  .engage {
+    left: 0;
+    margin: 20px auto;
+    width: 71vw;
+  }
+
+  .ourmotivationone {
+    font-size: 15px;
+  }
+
+  .donationinfo h1 {
+    font-size: 20px;
+  }
+  .donationinfo h2 {
+    font-size: 16px;
+  }
+  .donationinfo h3 {
+    font-size: 16px;
+  }
+  
+  .card1 {
+    width: 25vw;
+  }
+  .card2 {
+    width: 25vw;
+  }
+  .card3 {
+    width: 25vw;
+  }
+  .card4 {
+    width: 40vw;
+  }
+  .card5 {
+    width: 25vw;
+  }
+  .card6 {
+    width: 35vw;
+  }
+  .card7 {
+    width: 25vw;
+  }
+  .card8 {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero {
+    height: 120vw;
+  }
+
+  .engage {
+    width: 90vw;
+  }
+  .engage h2 {
+    font-size: 6vw;
+  }
+  .engage h3 {
+    font-size: 4vw;
+    margin: 10px 0;
+  }
+
+  .engage button {
+    padding: 10px 15px;
+    font-size: 4vw;
+  }
+
+  .buttons {
+    margin-top: 0.5rem;
+  }
+
+  .ourmotivationtwo {
+    width: 60vw;
+    height: 60vw;
+  }
+}

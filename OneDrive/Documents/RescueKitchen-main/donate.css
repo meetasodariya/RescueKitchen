@@ -1,0 +1,1407 @@
+/* Google fonts link */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Raleway:wght@600;800&display=swap");
+/* font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif; */
+
+/* General CSS */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+section {
+  margin-top: 4vw;
+  position: relative;
+  top: 80px;
+}
+
+.greenraleway {
+  color: rgb(1, 156, 1);
+  font-family: "Raleway", sans-serif;
+}
+.yellowraleway {
+  color: #e2b500;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Section header starts */
+.sec_header::after {
+  content: "";
+  width: 100%;
+  height: 30px;
+  background-image: url(decoration.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 0;
+}
+
+.sec {
+  margin-top: 20px;
+  margin-bottom: 4rem;
+}
+.sec_header h1 {
+  color: rgb(1, 156, 1);
+  text-align: center;
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+}
+
+/* Section header ends */
+
+/* Hero section starts */
+.hero {
+  padding: 25px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  top: 80px;
+}
+
+video {
+  width: 44%;
+  max-width: 44%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.videocontent {
+  font-family: "Raleway";
+  width: 52%;
+  text-align: justify;
+}
+
+.videocontent h1 {
+  font-family: "Raleway";
+  color: rgb(1, 156, 1);
+}
+
+.videocontent h3 {
+  font-family: "Raleway";
+  color: #e2b500;
+}
+
+.videocontent p {
+  font-size: 21px;
+}
+
+.curs {
+  font-family: cursive;
+  color: black;
+  font-size: 28px;
+}
+
+.curs span {
+  color: rgb(1, 156, 1);
+}
+/* Hero section ends */
+
+/* Donation table and info starts */
+.tableinfo {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabledonation {
+  width: 70%;
+  font-family: "Raleway";
+}
+
+.info {
+  width: 44%;
+  font-family: "Raleway";
+}
+
+.info h3 {
+  font-family: "Raleway";
+  color: #e2b500;
+}
+
+.info h1 {
+  color: rgb(1, 156, 1);
+  font-family: "Raleway";
+}
+
+.info p {
+  font-size: 21px;
+  font-family: "Raleway";
+}
+
+/* Donation table and info ends */
+
+/* donation form section starts */
+.con {
+  margin: 9vw 0vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.signin {
+  padding: 25px 0;
+}
+
+.form1 {
+  background-color: #fff;
+  width: 70vw;
+  margin: 20px auto;
+}
+
+.error-message#name-error{
+  display: none;
+  position: relative;
+  color: red;
+  font-size: .8rem;
+  z-index: 10;
+  top: -.5rem;
+  right: -12rem;
+}
+
+.error-message#phone-error{
+  display: none;
+  position: relative;
+  color: red;
+  font-size: .8rem;
+  z-index: 10;
+  top: -.5rem;
+  left: 9rem;
+}
+
+.error-message#selection-error{
+  display: none;
+  position: relative;
+  color: red;
+  font-size: .8rem;
+  z-index: 10;
+  top: -.5rem;
+  left: 11rem;
+}
+
+.error-message#amount-error{
+  display: none;
+  position: relative;
+  color: red;
+  font-size: .8rem;
+  z-index: 10;
+  top: -.5rem;
+  left: 11.5rem;
+}
+
+.con h1 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 100;
+  color: deeppink;
+  font-size: 3.2vw;
+  text-align: center;
+  margin: 2.5vw 0vh;
+}
+
+.inrow {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-bottom: 25px;
+  height: 3.7vw;
+}
+
+.inrow input {
+  position: absolute;
+  width: 19vw;
+  height: 3.5vw;
+  color: rgb(1, 156, 1);
+  font-family: "Merriweather", serif;
+  font-weight: 100;
+  font-size: 1.3vw;
+  border: none;
+}
+
+.inrow select {
+  position: absolute;
+    width: 18vw;
+    height: 3.5vw;
+    color: #e2b500;
+    font-size: 1.3vw;
+    padding: 0;
+    border: none;
+    
+    option{
+      color: rgb(1, 156, 1);
+    }
+}
+
+.inrow input:focus {
+  outline: none;
+  /* IMPORTANT */
+}
+
+.inrow select:focus {
+  outline: none;
+  /* IMPORTANT */
+}
+
+.conr input:focus {
+  outline: none;
+}
+
+.name {
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  width: 25vw;
+  height: 3.7vw;
+  background-color: white;
+}
+
+.phone {
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  width: 25vw;
+  height: 3.7vw;
+  background-color: white;
+}
+
+.apple {
+  margin: 1.14vw 2vw;
+  font-size: 1.4rem;
+  color: rgb(1, 156, 1);
+}
+
+.email {
+  position: relative;
+  margin-right: 0px;
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  height: 3.7vw;
+  width: 56.35vw;
+  margin: 2vw 6.95vw;
+  background-color: white;
+}
+
+.email input {
+  position: absolute;
+  color: rgb(1, 156, 1);
+  width: 47vw;
+  font-family: "Merriweather", serif;
+  font-weight: 100;
+  height: 3.7vw;
+  font-size: 1.3vw;
+  border: none;
+}
+
+.email input:focus {
+  outline: none;
+}
+
+.message textarea {
+  position: absolute;
+  width: 47vw;
+  margin: 2vh 0vh;
+  font-family: "Merriweather", serif;
+  height: 10.5vw;
+  font-size: 1.4vw;
+  border: none;
+  color: rgb(1, 156, 1);
+}
+
+.message textarea:focus {
+  outline: none;
+}
+
+.message {
+  font-family: "Courier New", Courier, monospace;
+  position: relative;
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  width: 56.35vw;
+  margin: 2vw 6.95vw;
+  height: 13vw;
+  background-color: white;
+}
+
+.conr {
+  width: 30vw;
+  z-index: 2;
+  border: none;
+  background-color: #fff;
+}
+
+.conr h1 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 100;
+  font-size: 2.5vw;
+  color: black;
+  margin: 2.5vw 0vh;
+}
+
+.info {
+  font-family: "Raleway ";
+  font-weight: 100;
+  padding: 0px 25px;
+}
+
+.open {
+  font-family: "Raleway";
+  font-weight: 100;
+  padding: 0px 30px;
+}
+
+.info li {
+  margin: 23px 0vw;
+  font-size: 1.5vw;
+}
+
+.open li {
+  margin: 1.5vw 0vw;
+  font-size: 1.5vw;
+}
+
+.form1 ::placeholder {
+  font-weight: 400;
+  font-family: system-ui;
+  color: #e2b500;
+}
+
+.blue {
+  color: darkslategray;
+  font-weight: 500;
+}
+
+.btnS {
+  font-family: "Roboto Slab", serif;
+  font-weight: 100;
+  display: block;
+  position: relative;
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  height: 2.7vw;
+  color: #e2b500;
+  font-size: 1.6vw;
+  background: white;
+  width: 10vw;
+  margin: 0vw auto;
+}
+
+.btnS:hover {
+  color: white;
+  background: rgb(1, 156, 1);
+}
+
+.our input {
+  font-family: "Merriweather", serif;
+  font-weight: 100;
+  position: absolute;
+  width: 19vw;
+  height: 3.7vw;
+  color: dimgray;
+  font-size: 1.3vw;
+  border: none;
+}
+
+.open ul li {
+  list-style: none;
+  color: dimgray;
+}
+
+.margerita {
+  margin: 1.6vw 0px;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  height: 3.3rem;
+  background-color: deeppink;
+  width: 3.3rem;
+  border-radius: 2rem;
+  margin: 0px 0.9vw;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.ico {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 1.1rem;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  transform: translateY(-10px);
+}
+
+.app {
+  width: 62vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.app ::placeholder {
+  font-weight: 400;
+  font-family: system-ui;
+  color: deeppink;
+}
+
+.fn {
+  position: relative;
+  margin-right: 0px;
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  height: 7vh;
+  width: 56.35vw;
+  margin: 3.4vh 13vh;
+  background-color: white;
+}
+
+.elasticman {
+  position: relative;
+  margin-right: 0px;
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  height: 3.7vw;
+  width: 54vw;
+  margin: 2vw 4vw;
+  background-color: white;
+  margin-bottom: 0;
+}
+
+.elasticman input {
+  position: absolute;
+  font-family: "Merriweather", serif;
+  font-weight: 100;
+  width: 47vw;
+  height: 3.7vw;
+  font-size: 1.3vw;
+  border: none;
+}
+
+.elasticman input:focus {
+  outline: none;
+}
+
+.spiderman textarea {
+  position: absolute;
+  width: 47vw;
+  margin: 1.5vh 0vh;
+  font-family: "Merriweather", serif;
+  height: 10.5vw;
+  font-size: 1.4vw;
+  border: none;
+}
+
+.spiderman textarea:focus {
+  outline: none;
+}
+
+.spiderman {
+  font-family: "Courier New", Courier, monospace;
+  position: relative;
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  width: 54vw;
+  margin: 2vw 4vw;
+  height: 13vw;
+  background-color: white;
+}
+
+.deeppink {
+  color: black;
+}
+
+/* dropdown starts */
+.dropdown {
+  min-width: 25vw;
+  position: relative;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+
+}
+
+.dropdown * {
+  box-sizing: border-box;
+}
+
+.select {
+  background: white;
+  color: rgb(1, 156, 1);
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  border: none;
+  width: 25vw;
+  margin: 0px auto;
+  padding: 0.7em 1em;
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  transition: background 0.3s;
+  font-size: 1.3vw;
+  padding: 0.55em 1em;
+}
+
+.select-clicked {
+  border: 2px solid rgb(1, 156, 1);
+}
+
+.select:hover {
+  background: white;
+}
+
+.caret {
+  height: 0;
+  position: absolute;
+  width: 0;
+  right: 15px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid rgb(1, 156, 1);
+  transition: 0.3s;
+}
+
+.caret-rotate {
+  transform: rotate(180deg);
+}
+
+.menu {
+  list-style: none;
+  padding: 0.2em 0.5em;
+  background: white;
+  border: 1px solid rgb(1, 156, 1);
+  top: 4em;
+  left: 50%;
+  width: 25vw;
+  transform: translateX(-50%);
+  opacity: 0;
+  display: none;
+  transition: 0.2s;
+  z-index: 1;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+  position: absolute;
+  color: rgb(1, 156, 1);
+  border-radius: 0.5em;
+}
+
+.menu li {
+  padding: 0.7em 0.5em;
+  margin: 0.3em 0;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  background: #e2b500;
+  color: white;
+}
+
+.active {
+  background: rgb(1, 156, 1);
+  color: white;
+}
+
+.menu-open {
+  display: block;
+  opacity: 1;
+}
+
+.pa6ad {
+  z-index: -99;
+}
+.opo {
+  opacity: 0;
+}
+.fa-coins {
+  margin: 0vw 0.5vw;
+  font-size: 1.4rem;
+  margin-right: 30px;
+  color: rgb(1, 156, 1);
+}
+/* donation form section ends */
+
+/* Supporters starts */
+.supporterinfo {
+  width: 55vw;
+  font-family: "Raleway", sans-serif;
+}
+
+.supporterinfo p {
+  font-size: 20px;
+}
+
+.supporterinfo h1 {
+  color: rgb(1, 156, 1);
+}
+
+.supporters {
+  padding: 25px;
+}
+
+.card1 {
+  width: 14rem;
+  background-image: url("https://refed.org/img/home/general_mills_logo.png?_cchid=1b8a05dc474acaced150a69a26d41629");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 4rem;
+}
+.card2 {
+  width: 14rem;
+  background-image: url("https://refed.org/uploads/posner-horizontal-teal.png?_cchid=7314112977f26a1f3adf556f28cdc098");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 4rem;
+}
+.card3 {
+  width: 14rem;
+  background-image: url("https://refed.org/uploads/bjfff.png?_cchid=98c29afe2e4aae8b2b9c3a14ccb4ff79");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 4rem;
+}
+.card4 {
+  width: 14rem;
+  background-image: url("https://refed.org/img/home/Kroger_ZHZW_Foundation_onWhite.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 4rem;
+}
+.card5 {
+  width: 14rem;
+  background-image: url("https://refed.org/uploads/ballmer-logo.png?_cchid=618b0b9442845c262d0d7cb5ac625197");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 4rem;
+}
+.card6 {
+  width: 14rem;
+  background-image: url("https://refed.org/uploads/ballmer-logo.png?_cchid=618b0b9442845c262d0d7cb5ac625197");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 4rem;
+}
+.card7 {
+  width: 14rem;
+  background-image: url("https://refed.org/img/home/Kroger_ZHZW_Foundation_onWhite.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 4rem;
+}
+.card8 {
+  width: 14rem;
+  background-image: url("https://refed.org/uploads/the-tepper-foundation.png?_cchid=47891c05f9ac04820811284b7a9ac95e");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 4rem;
+}
+.card9 {
+  width: 14rem;
+  background-image: url("https://refed.org/uploads/google-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 4rem;
+}
+.card10 {
+  width: 14rem;
+  background-image: url("	https://refed.org/uploads/twc-logo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 4rem;
+}
+.card11 {
+  width: 14rem;
+  background-image: url("https://refed.org/uploads/unilever.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 4rem;
+}
+.card12 {
+  width: 14rem;
+  background-image: url("https://refed.org/uploads/our-funders-best-foods-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 4rem;
+}
+
+.supporterimage {
+  margin: 45px 0;
+}
+/* Supporters ends */
+
+/* Indivisual donors starts */
+.names {
+  margin: 45px 0;
+}
+/* Indivisual donors ends */
+/* footer section ends */
+.footercontainer {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.footerrow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(1, 156, 1);
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: rgb(1, 156, 1);
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: rgb(1, 156, 1);
+  font-weight: 400;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: black;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border: 1px solid black;
+  margin-right: 10px;
+  margin: 0 10px 20px 0;
+  text-align: center;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  color: black;
+
+  line-height: 40px;
+}
+
+.footer-col .social-links a:hover {
+  color: white;
+  border: 1px solid rgb(1, 156, 1);
+  background-color: rgb(1, 156, 1);
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  line-height: 1.5;
+  background-color: #f0f0f0;
+  padding: 70px 0;
+  position: relative;
+  top: 80px;
+  margin-top: 4vw;
+  font-family: "Raleway";
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+/* footer section ends */
+/* copyright starts */
+.high {
+  font-size: larger;
+  color: black;
+}
+
+.high span {
+  color: rgb(1, 156, 1);
+}
+
+.copyright {
+  text-align: center;
+  background-color: white;
+  color: black;
+  position: relative;
+  top: 80px;
+  padding: 10px 20px;
+  font-family: "Raleway";
+}
+/* copyright ends */
+
+/* mediaqueries */
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+  .form1 {
+    width: 100vw;
+    margin: 0px auto;
+  }
+  .fa-coins {
+    margin: 0vw -0.5vw;
+    margin-right: 19px;
+    font-size: 2.5vw;
+  }
+  .select {
+    height: 6.7vw;
+    width: 70vw;
+    font-size: 2.3vw;
+    margin: 1vw auto;
+  }
+
+  .menu {
+    height: 29.7vw;
+    font-size: 2.3vw;
+    width: 70vw;
+    margin: 0vw auto;
+  }
+
+  .apple {
+    margin: 2.22vw 2vw;
+    font-size: 2.5vw;
+  }
+
+  .btnS {
+    height: 4.7vw;
+    font-size: 2.3vw;
+    width: 16vw;
+  }
+
+  .email {
+    margin-right: 0px;
+    height: 6.7vw;
+    width: 70vw;
+    margin: 1vw auto;
+  }
+
+  .email input {
+    width: 57vw;
+    height: 6.5vw;
+    font-size: 2.3vw;
+  }
+
+  .message {
+    height: 17vw;
+    width: 70vw;
+    margin: 2vw auto;
+  }
+
+  .message textarea {
+    width: 57vw;
+    height: 14vw;
+    font-size: 2.4vw;
+  }
+
+  .inrow {
+    flex-direction: column;
+    margin-bottom: 0%;
+  }
+
+  .caret {
+    right: 18vw;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid rgb(1, 156, 1);
+  }
+
+  .name {
+    margin-right: 0px;
+    height: 6.7vw;
+    width: 70vw;
+    margin: 0vw auto;
+    margin-bottom: 1vw;
+  }
+
+  .phone {
+    margin-right: 0px;
+    height: 6.7vw;
+    width: 70vw;
+    margin: 1vw auto;
+  }
+
+  .inrow input {
+    width: 57vw;
+    height: 6.5vw;
+    font-size: 2.3vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .fa-coins {
+    margin: 0vw -1.5vw;
+    margin-right: 12px;
+    font-size: 3.4vw;
+  }
+  .select {
+    height: 10vw;
+    width: 85%;
+    margin: 1vw auto;
+    font-size: 3vw;
+  }
+
+  .menu {
+    height: 40.7vw;
+    font-size: 3vw;
+    width: 85%;
+    margin: 0vw auto;
+  }
+
+  .form1 {
+    width: 100vw;
+    margin: 0px auto;
+  }
+
+  .apple {
+    font-size: 3.4vw;
+    margin: 2.22vw 2vw;
+  }
+  .btnS {
+    height: 6.7vw;
+    font-size: 3.5vw;
+    width: 21vw;
+  }
+
+  .email {
+    margin-right: 0px;
+    height: 10vw;
+    width: 85%;
+    margin: 1vw auto;
+  }
+
+  .email input {
+    width: 57vw;
+    height: 6.5vw;
+    font-size: 3vw;
+  }
+
+  .message {
+    height: 23vw;
+    width: 85%;
+    margin: 2vw auto;
+  }
+
+  .message textarea {
+    width: 61vw;
+    margin: 1vw;
+    height: 17vw;
+    font-size: 3.1vw;
+  }
+
+  .inrow {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .caret {
+    right: 13vw;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid rgb(1, 156, 1);
+  }
+
+  .name {
+    margin-right: 0px;
+    height: 10vw;
+    width: 85%;
+    margin: 0vw auto;
+    margin-bottom: 1vw;
+  }
+
+  .phone {
+    margin-right: 0px;
+    height: 10vw;
+    width: 85%;
+    margin: 1vw auto;
+  }
+
+  .inrow input {
+    width: 57vw;
+    height: 7.7vw;
+    font-size: 3vw;
+  }
+}
+
+nav {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+.logo {
+  color: transparent;
+  font-family: cursive;
+  font-size: 30px;
+  -webkit-text-stroke: 1.2px black;
+  margin: auto;
+  line-height: 80px;
+  padding: 0 50px;
+  font-weight: bold;
+}
+
+#check:checked ~ ul {
+  top: 80px;
+}
+
+nav .ul {
+  float: right;
+  margin: 19px 0;
+}
+
+nav .ul .li {
+  display: inline-block;
+  line-height: 40px;
+  margin: 0 20px;
+}
+
+.checkbtn {
+  float: right;
+  color: rgb(1, 156, 1);
+  line-height: 80px;
+  font-size: 30px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.a {
+  position: relative;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(1, 156, 1);
+  font-size: 1.4vw;
+  letter-spacing: 0.5px;
+}
+
+.a::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  transition: 0.4s ease-in-out;
+}
+
+.a:hover {
+  color: black;
+}
+
+.a:hover::after {
+  width: 100%;
+}
+
+nav img {
+  height: 4vw;
+  border-radius: 50%;
+}
+
+.donate {
+  border-radius: 7px;
+  padding: 0px 10px;
+  font-size: 1.4vw;
+  cursor: pointer;
+  border: 2px solid black;
+  background-color: transparent;
+  color: black;
+}
+
+.btnD {
+  color: black;
+  text-decoration: none;
+}
+
+.btnD:hover {
+  color: white;
+}
+
+.donate:hover {
+  border: 2px solid rgb(1, 156, 1);
+  outline: none;
+  color: white;
+  background-color: rgb(1, 156, 1);
+}
+
+.logo span {
+  color: rgb(1, 156, 1);
+  font-size: larger;
+  font-weight: 900;
+}
+
+.wholelogo {
+  display: flex;
+  gap: 2px;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 25px;
+    padding-left: 35px;
+  }
+
+  nav .ul .li a {
+    font-size: 16px;
+  }
+
+  nav .ul .li {
+    margin: 0 8px;
+  }
+
+  .donate {
+    font-size: 1.7vw;
+  }
+
+  .a {
+    font-size: 1.9vw;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 953px) {
+  nav .ul .li {
+    margin: 0 15px;
+  }
+  label.logo {
+    font-size: 25px;
+    padding-left: 50px;
+  }
+
+  .a {
+    font-size: 1.6vw;
+  }
+
+  .donate {
+    font-size: 1.6vw;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  .a {
+    font-size: 17px;
+    color: white;
+  }
+
+  .donate {
+    font-size: 17px;
+    border: 2px solid white;
+    color: white;
+    padding: 3px 14px;
+  }
+
+  .donate:hover {
+    color: rgb(1, 156, 1);
+    background-color: white;
+  }
+
+  .ul {
+    position: fixed;
+    width: 100%;
+    height: 340px;
+    background: rgb(1, 156, 1);
+    top: -100%;
+    transition: all 0.5s;
+    text-align: center;
+  }
+
+  nav .ul {
+    margin: 0px;
+  }
+
+  nav .ul .li {
+    margin: 20px 0;
+    line-height: 30px;
+    display: block;
+  }
+
+  nav .ul .li a {
+    font-size: 20px;
+    color: white;
+  }
+  .fa-coins {
+    margin: 0 0.5vw;
+    margin-right: 17px;
+    font-size: 4.4vw;
+  }
+
+  .inrow input {
+    width: 57vw;
+    height: 11.7vw;
+    font-size: 4.2vw;
+  }
+
+  .apple {
+    font-size: 4.4vw;
+    margin: 4vw 5vw;
+  }
+
+  .btnS {
+    height: 7.7vw;
+    font-size: 4.5vw;
+    width: 22vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .phone {
+    height: 12vw;
+  }
+
+  .select {
+    height: 12vw;
+    font-size: 4.2vw;
+  }
+
+  .name {
+    height: 12vw;
+  }
+
+  .caret {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid rgb(1, 156, 1);
+  }
+
+  .fa-coins {
+    margin: 0 0.5vw;
+    margin-right: 17px;
+    font-size: 4.4vw;
+  }
+
+  .inrow input {
+    width: 57vw;
+    height: 11.7vw;
+    font-size: 4.2vw;
+  }
+
+  .apple {
+    font-size: 4.4vw;
+    margin: 4vw 5vw;
+  }
+
+  .btnS {
+    height: 7.7vw;
+    font-size: 4.5vw;
+    width: 22vw;
+  }
+
+  .menu {
+    margin: 3vw auto;
+  }
+}
+
+
+
+
+/* Custom styles for the select currency dropdown */
+.custom-select {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-size: 1rem;
+  color: #495057;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  padding: 0.375rem 2rem 0.375rem 0.75rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+/* Hide default arrow icon in select dropdown */
+.custom-select::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0.8rem;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #000;
+}
+
+/* Style for the currency label */
+.currency-label {
+  color: #e2b500;
+}
+
+/* Hide the default arrow icon */
+.custom-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  border: none;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
